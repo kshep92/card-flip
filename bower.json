@@ -1,0 +1,24 @@
+{
+  "name": "card-flip",
+  "description": "A component for 3D card flips",
+  "main": "index.js",
+  "authors": [
+    "Kevin Sheppard <kevin@reviselabs.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

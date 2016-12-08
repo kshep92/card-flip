@@ -1,0 +1,26 @@
+
+<dom-module id="flip-card">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+            .front {
+                color: red;
+            }
+        </style>
+        <div class="front">
+            <content select="[front]"></content>
+        </div>
+        <div class="back">
+            <content select="[back]"></content>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'flip-card'
+        });
+    </script>
+</dom-module>
+
+<!--<flip-card flipped no-animate></flip-card>-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer-mini.html">
+    <!--<link rel="import" href="components/flip-card.html">-->
+    <link rel="stylesheet" href="style.css">
+    <title>Card Flip Demo</title>
+</head>
+<body>
+    <div class="flip-card" id="card">
+        <div class="flip-card__flipper">
+            <div class="flip-card__front">
+                <h2>1</h2>
+            </div>
+            <div class="flip-card__back">
+                <h2>2</h2>
+            </div>
+        </div>
+    </div>
+    <button id="btnFlip">Flip Card</button>
+    <script>
+        var button = document.getElementById('btnFlip');
+        var card = document.getElementById('card');
+        button.addEventListener('click', function() {
+            card.classList.toggle('flipped');
+        });
+    </script>
+</body>
+</html>
